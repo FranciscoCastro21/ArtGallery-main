@@ -1,0 +1,59 @@
+<div class="container mt-5">
+<h1 class="text-center mb-4 display-5 fw-bold text-dark">Register</h1>
+
+
+  <form method="post" class="mx-auto" style="max-width: 500px;">
+    <!-- Username field -->
+    <fieldset class="form-group mb-3">
+      <label for="username" class="form-label">Username: </label>
+      <input
+        name="username"
+        id="username"
+        type="email"
+        class="form-control"
+        required
+        placeholder="email@email.com"
+      />
+    </fieldset>
+
+    <!-- Password field -->
+    <fieldset class="form-group mb-3">
+      <label for="password" class="form-label">Password: </label>
+      <input
+        name="password"
+        id="password"
+        type="password"
+        class="form-control"
+        required
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        placeholder="At least 8 characters, 1 uppercase letter, 1 number"
+      />
+    </fieldset>
+
+    <!-- Confirm Password field -->
+    <fieldset class="form-group mb-3">
+      <label for="confirm" class="form-label">Confirm: </label>
+      <input
+        name="confirm"
+        id="confirm"
+        type="password"
+        class="form-control"
+        required
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        placeholder="Re-enter your password"
+      />
+    </fieldset>
+
+    <!-- Submit button -->
+    <div class="text-center">
+      <button class="btn btn-dark btn-block w-100">Register</button>
+    </div>
+
+    <hr class="my-4" />
+
+    <!-- Login redirect -->
+    <p class="text-center">
+      Already have an account? <a href="/login" class="text-decoration-none">Login</a>
+    </p>
+  </form>
+</div>
